@@ -11,7 +11,7 @@ import { ChatComponent } from './components/chat/chat.component';
 import { HeaderComponent } from './components/header/header.component';
 
 const config: SocketIoConfig = {
-  url: 'http://localhost:3000',
+  url: 'https://clonezoomsocket.azurewebsites.net',
   options: { withCredentials: '*' },
 };
 

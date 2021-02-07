@@ -1,0 +1,58 @@
+.ContainerChat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  h3 {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+  }
+  .ContainerMessages {
+    height: calc(100vh - 288px);
+    padding: 20px;
+    overflow: auto;
+    background-color: #fff;
+    position: relative;
+    border-left: 1px solid #ddd;
+    span {
+      background-color: #4a92f0;
+      color: #fff;
+      margin-bottom: 2px;
+      display: block;
+      border-radius: 10px;
+      padding: 5px;
+    }
+  }
+
+  .ContainerSendMessage {
+    background-color: #000;
+    position: relative;
+    padding: 10px;
+    .ContainerData {
+      input {
+        width: 100px;
+        margin-bottom: 5px;
+      }
+      textarea {
+        resize: none;
+        height: 60px;
+        width: 100%;
+      }
+    }
+    .ContainerButton {
+      button {
+        background-color: #4a92f0;
+        border: none;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

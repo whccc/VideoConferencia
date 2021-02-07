@@ -1,0 +1,14 @@
+<app-header></app-header>
+<div class="ContainerRoom">
+  <div class="wrapper-room">
+    <div>
+      <app-video-player
+        [stream]="user"
+        *ngFor="let user of listUser"
+      ></app-video-player>
+    </div>
+  </div>
+  <div class="ContainerChat">
+    <app-chat></app-chat>
+  </div>
+</div>

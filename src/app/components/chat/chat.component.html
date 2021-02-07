@@ -1,0 +1,21 @@
+<div class="ContainerChat">
+  <h3>Chat</h3>
+  <div class="ContainerMessages" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+    <span
+      *ngFor="let user of messajes"
+      class="animate__animated animate__fadeIn"
+    >
+      <small>Usuario: {{ user.nombre }}</small>
+      <p>{{ user.mensaje }}</p>
+    </span>
+  </div>
+  <div class="ContainerSendMessage">
+    <div class="ContainerData">
+      <input #nombre type="text" placeholder="Nombre" />
+      <textarea #mensaje placeholder="Mensaje"></textarea>
+    </div>
+    <div class="ContainerButton">
+      <button (click)="SendMessage(nombre.value, mensaje.value)">Enviar</button>
+    </div>
+  </div>
+</div>
